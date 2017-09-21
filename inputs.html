@@ -1,9 +1,734 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<title></title>
+	<title>Vallerie Ines</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-lg-12">
+		<h1>Bootstrap Tutorial</h1>
+	</div>		
+	</div>
+		<div class="row">
+		<div class="col-sm-4">
+			<ul>
+				<li> <a href="typography.html">Typography</a></li>
+				<li> <a href="tables.html">Tables </a></li>
+				<li><a href="images.html">Images </a></li>
+				<li><a href="jumbotron.html">Jumbotron</a></li>
+				<li><a href="wells.html">Wells</a></li>
+				<li><a href="alerts.html">Alerts</a></li>
+				<li><a href="buttons.html">Buttons</a></li>
+				<li><a href="button groups.html">Button Groups</a></li>
+				<li><a href="glyphicons.html">Glyphicons</a></li>
+				<li><a href="badgeslabel.html">Badges/Label</a></li>
+				<li><a href="progress bars.html">Progress Bars</a></li>
+				<li><a href="pagination.html">Pagination</a></li>
+				<li><a href="pager.html">Pager</a></li>
+				<li><a href="listgroups.html">List Groups</a></li>
+				<li><a href="panels.html">Panels</a></li>
+				<li><a href="dropdowns.html">Dropdowns</a></li>
+				<li><a href="collapse.html">Collapse</a></li>
+				<li><a href="tabspills.html">Tabs/Pills</a></li>
+				<li><a href="navbar.html">Navbar</a></li>
+				<li><a href="forms.html">Forms</a></li>
+				<li><a href="inputs.html">Inputs</a></li>
+				<li><a href="input2.html">Input2</a></li>
+				<li><a href="input sizing.html">Input sizing</a></li>
+				<li><a href="media objects.html">Media Objects</a></li>
+				<li><a href="carousel.html">Carousel</a></li>
+				<li><a href="modal.html">Modal</a></li>
+				<li><a href="tool tip.html">Tool Tip</a></li>
+				<li><a href="popover.html">Popover</a></li>
+				<li><a href="scrollspy.html">Scrollspy</a></li>
+				<li><a href="affix.html">Affix</a></li>
+		</ul>
+	</div>
+
+		<div class="col-sm-8">
+
+<div class="container">
+  <h2>Form control: input</h2>
+  <p>The form below contains two input elements; one of type text and one of type password:</p>
+  <form>
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Form control: textarea</h2>
+  <p>The form below contains a textarea for comments:</p>
+  <form>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Form control: inline checkbox</h2>
+  <p>The form below contains three inline checkboxes:</p>
+  <form>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 3
+    </label>
+  </form>
+</div>
+
+
+
+<div class="container">
+  <h2>Form control: inline radio buttons</h2>
+  <p>The form below contains three inline radio buttons:</p>
+  <form>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 2
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 3
+    </label>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Form control: select</h2>
+  <p>The form below contains two dropdown menus (select lists):</p>
+  <form>
+    <div class="form-group">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+      <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+      <select multiple class="form-control" id="sel2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Horizontal form with static control</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">someone@example.com</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h3>Input Groups</h3>
+  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
+  <p>The .input-group-addon class attaches an icon or help text next to the input field.</p>
+  
+  <form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">Text</span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+    </div>
+  </form>
+  <br>
+
+  <p>It can also be used on the right side of the input:</p>
+  <form>
+    <div class="input-group">
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
+    </div>
+    <div class="input-group">
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Inline form: control states</h2>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="focusedInput">Focused</label>
+      <input class="form-control" id="focusedInput" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Disabled</label>
+      <input class="form-control" id="disabledInput" type="text" disabled>
+    </div>
+    <div class="form-group has-success has-feedback">
+      <label for="inputSuccess2">Input with success</label>
+      <input type="text" class="form-control" id="inputSuccess2">
+      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+    <div class="form-group has-warning has-feedback">
+      <label for="inputWarning2">Input with warning</label>
+      <input type="text" class="form-control" id="inputWarning2">
+      <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    </div>
+    <div class="form-group has-error has-feedback">
+      <label for="inputError2">Input with error</label>
+      <input type="text" class="form-control" id="inputError2">
+      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Input Sizing</h2>
+  <p>You can quickly size labels and form controls within a Horizontal form by adding .form-group-lg or .form-group-sm to the div class="form-group" element:</p>
+  <form class="form-horizontal">
+    <div class="form-group form-group-lg">
+      <label class="col-sm-2 control-label" for="lg">form-group-lg</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" id="lg">
+      </div>
+    </div>
+    <div class="form-group form-group-sm">
+      <label class="col-sm-2 control-label" for="sm">form-group-sm</label>
+      <div class="col-sm-10">
+        <input class="form-control" type="text" id="sm">
+      </div>
+    </div>
+  </form>
+</div>
+
+ 
+<div class="container">
+  <h1>Input Group Size</h1>
+  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
+  <p>Use the .input-group-lg if you want a large input group:</p>
+  <form>
+    <div class="input-group input-group-lg">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+  <br>
+
+  <p>Use the .input-group-sm if you want a small input group:</p>
+  <form>
+    <div class="input-group input-group-sm">
+      <input type="text" class="form-control" placeholder="Search">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Column Sizing</h2>
+  <p>The form below shows input elements with different widths using different .col-xs-* classes:</p>
+  <form>
+    <div class="form-group row">
+      <div class="col-xs-2">
+        <label for="ex1">col-xs-2</label>
+        <input class="form-control" id="ex1" type="text">
+      </div>
+      <div class="col-xs-3">
+        <label for="ex2">col-xs-3</label>
+        <input class="form-control" id="ex2" type="text">
+      </div>
+      <div class="col-xs-4">
+        <label for="ex3">col-xs-4</label>
+        <input class="form-control" id="ex3" type="text">
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Help text</h2>
+  <p>Use the .help-block class to add a block level help text in forms:</p>
+  <form>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      <span class="help-block">This is some help text that breaks onto a new line and may extend more than one line.</span>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Media Object</h2>
+  <p>Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+  <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+  
+  <!-- Left-aligned media object -->
+  <div class="media">
+    <div class="media-left">
+      <img src="img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Left-aligned</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Right-aligned media object -->
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">Right-aligned</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="media-right">
+      <img src="img_avatar1.png" class="media-object" style="width:60px">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Media Object</h2>
+  <p>The media object can also be top, middle or bottom-aligned with the "media-top", "media-middle" or "media-bottom" class:</p><br>
+  <div class="media">
+    <div class="media-left media-top">
+      <img src="img_avatar1.png" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Top</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="media">
+    <div class="media-left media-middle">
+      <img src="img_avatar1.png" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Middle</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="media">
+    <div class="media-left media-bottom">
+      <img src="img_avatar1.png" class="media-object" style="width:80px">
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Media Bottom</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h2>Inline form: control states</h2>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="focusedInput">Focused</label>
+      <input class="form-control" id="focusedInput" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Disabled</label>
+      <input class="form-control" id="disabledInput" type="text" disabled>
+    </div>
+    <div class="form-group has-success has-feedback">
+      <label for="inputSuccess2">Input with success</label>
+      <input type="text" class="form-control" id="inputSuccess2">
+      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+    <div class="form-group has-warning has-feedback">
+      <label for="inputWarning2">Input with warning</label>
+      <input type="text" class="form-control" id="inputWarning2">
+      <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    </div>
+    <div class="form-group has-error has-feedback">
+      <label for="inputError2">Input with error</label>
+      <input type="text" class="form-control" id="inputError2">
+      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container">
+  <h2>Carousel Example</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<div class="container">
+  <h2>Small Modal</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is a small modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h2>Large Modal</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>This is a large modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <p>The data-placement attribute specifies the tooltip position.</p>
+  <ul class="list-inline">
+    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <p>The data-placement attribute specifies the tooltip position.</p>
+  <ul class="list-inline">
+    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+
+<div class="container">
+  <h3>Popover Example</h3>
+  <ul class="list-inline">
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Top</a></li>
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a></li>
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a></li>
+    <li><a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right</a></li>
+  </ul>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+
+<div class="container">
+  <h3>Popover Example</h3>
+  <a href="#" title="Header" data-toggle="popover" data-content="Some content">Click Me</a><br>
+  <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+
+
+
+
+ <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+  <h1>Section 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>Section 4 Submenu 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section42" class="container-fluid">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+		<div class="row">
+		<div class="col-sm-12"> </div>
+		</div>
+		</div>
 
 </body>
 </html>

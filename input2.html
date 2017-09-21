@@ -1,9 +1,198 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<title></title>
+	<title>Vallerie Ines</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-lg-12">
+		<h1>Bootstrap Tutorial</h1>
+	</div>		
+	</div>
+		<div class="row">
+		<div class="col-sm-4">
+			<ul>
+				<li> <a href="typography.html">Typography</a></li>
+				<li> <a href="tables.html">Tables </a></li>
+				<li><a href="images.html">Images </a></li>
+				<li><a href="jumbotron.html">Jumbotron</a></li>
+				<li><a href="wells.html">Wells</a></li>
+				<li><a href="alerts.html">Alerts</a></li>
+				<li><a href="buttons.html">Buttons</a></li>
+				<li><a href="button groups.html">Button Groups</a></li>
+				<li><a href="glyphicons.html">Glyphicons</a></li>
+				<li><a href="badgeslabel.html">Badges/Label</a></li>
+				<li><a href="progress bars.html">Progress Bars</a></li>
+				<li><a href="pagination.html">Pagination</a></li>
+				<li><a href="pager.html">Pager</a></li>
+				<li><a href="listgroups.html">List Groups</a></li>
+				<li><a href="panels.html">Panels</a></li>
+				<li><a href="dropdowns.html">Dropdowns</a></li>
+				<li><a href="collapse.html">Collapse</a></li>
+				<li><a href="tabspills.html">Tabs/Pills</a></li>
+				<li><a href="navbar.html">Navbar</a></li>
+				<li><a href="forms.html">Forms</a></li>
+				<li><a href="inputs.html">Inputs</a></li>
+				<li><a href="input2.html">Input2</a></li>
+				<li><a href="input sizing.html">Input sizing</a></li>
+				<li><a href="media objects.html">Media Objects</a></li>
+				<li><a href="carousel.html">Carousel</a></li>
+				<li><a href="modal.html">Modal</a></li>
+				<li><a href="tool tip.html">Tool Tip</a></li>
+				<li><a href="popover.html">Popover</a></li>
+				<li><a href="scrollspy.html">Scrollspy</a></li>
+				<li><a href="affix.html">Affix</a></li>
+		</ul>
+	</div>
+
+<div class="container">
+  <h2>Horizontal form with static control</h2>
+  <form class="form-horizontal" action="/action_page.php">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-10">
+        <p class="form-control-static">someone@example.com</p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <h3>Input Groups</h3>
+  <p>The .input-group class is a container to enhance an input by adding an icon, text or a button in front or behind it as a "help text".</p>
+  <p>The .input-group-addon class attaches an icon or help text next to the input field.</p>
+  
+  <form>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    <br>
+    <div class="input-group">
+      <span class="input-group-addon">Text</span>
+      <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+    </div>
+  </form>
+  <br>
+
+  <p>It can also be used on the right side of the input:</p>
+  <form>
+    <div class="input-group">
+      <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>   
+    </div>
+    <div class="input-group">
+      <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    </div>
+  </form>
+</div>
+
+<div class="container">
+  <h2>Inline form: control states</h2>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="focusedInput">Focused</label>
+      <input class="form-control" id="focusedInput" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Disabled</label>
+      <input class="form-control" id="disabledInput" type="text" disabled>
+    </div>
+    <div class="form-group has-success has-feedback">
+      <label for="inputSuccess2">Input with success</label>
+      <input type="text" class="form-control" id="inputSuccess2">
+      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>
+    <div class="form-group has-warning has-feedback">
+      <label for="inputWarning2">Input with warning</label>
+      <input type="text" class="form-control" id="inputWarning2">
+      <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+    </div>
+    <div class="form-group has-error has-feedback">
+      <label for="inputError2">Input with error</label>
+      <input type="text" class="form-control" id="inputError2">
+      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+    </div>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Input Sizing</h2>
+  <p>The form below shows input elements with different heights using .input-lg and .input-sm:</p>
+  <form>
+    <div class="form-group">
+      <label for="inputdefault">Default input</label>
+      <input class="form-control" id="inputdefault" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputlg">input-lg</label>
+      <input class="form-control input-lg" id="inputlg" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputsm">input-sm</label>
+      <input class="form-control input-sm" id="inputsm" type="text">
+    </div>
+    <div class="form-group">
+      <label for="sel1">Default select list</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sel2">input-lg</label>
+      <select class="form-control input-lg" id="sel2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sel3">input-sm</label>
+      <select class="form-control input-sm" id="sel3">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+    </div>
+  </form>
+</div>
+		<div class="col-sm-8">
+
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-12"> </div>
+		</div>
+		</div>
 
 </body>
 </html>
